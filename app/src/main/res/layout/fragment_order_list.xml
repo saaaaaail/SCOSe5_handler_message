@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="es.source.code.activity.FoodView">
+
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/order_list"
+    android:name="es.source.code.Fragment.BaseOrderFragment"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    app:layoutManager="LinearLayoutManager"
+    tools:context="es.source.code.Fragment.BaseOrderFragment"
+    tools:listitem="@layout/fragment_order" />
+    <View style="@style/Gap"/>
+
+
+    <!-- 菜品总数 -->
+    <TextView
+        android:id="@+id/tv_food_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:background="@android:color/white"/>
+
+    <!-- 订单总价 -->
+    <TextView
+        android:id="@+id/tv_order_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:background="@android:color/white"/>
+
+    <View style="@style/Gap"/>
+
+
+
+
+</LinearLayout>

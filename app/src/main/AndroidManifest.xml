@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.source.code">
+
+    <permission
+        android:name="scos.permission.ACCESSSCOS"
+        android:protectionLevel="dangerous" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL.STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SCOSEntry"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainScreen"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:permission="scos.permission.ACCESSSCOS"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="scos.intent.action.SCOSMAIN" />
+                <!-- 不加DEFAULT会有问题 -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="scos.intent.category.SCOSLAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginOrRegister"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.FoodView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.FoodOrderView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.FoodDetailed"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activity.SCOSHelper"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <service
+            android:name=".service.ServerObserverService"
+            android:process="es.source.code.observerservice"/>
+        <service
+            android:name=".service.UpdateService"
+            android:exported="false"></service>
+
+        <receiver android:name=".br.DeviceStartedListener">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name = "android.intent.action.DEVICELISTENER"/>
+                <category android:name = "android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>

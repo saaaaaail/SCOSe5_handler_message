@@ -1,0 +1,70 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Sail吃饭了</string>
+
+    <!-- 各页面标题 -->
+    <string name="label_order">点餐</string>
+    <string name="label_list">订单</string>
+    <string name="label_account">账户</string>
+    <string name="label_help">帮助</string>
+    <string name="label_custom_order">查看订单</string>
+    <string name="label_food_detail">菜品详情</string>
+
+    <!-- 通用 -->
+    <string name="dialog_loading">载入中&#8230;</string>
+    <string name="unit_yuan">元</string>
+    <string name="btn_confirm">确认</string>
+    <string name="btn_cancel">取消</string>
+
+    <!-- 启动页 -->
+    <string name="toast_welcome">开始点餐吧！</string>
+
+    <!-- 导航页 -->
+    <string name="text_order">点菜啦</string>
+    <string name="text_list">查看订单</string>
+    <string name="text_account">登录/注册</string>
+    <string name="text_help">系统帮助</string>
+    <string name="toast_login_success">登录成功</string>
+    <string name="toast_new_account">欢迎您使用SCOS</string>
+
+    <!-- 注册登录页面 -->
+    <string name="text_login">登录</string>
+    <string name="text_register">注册</string>
+    <string name="text_back">返回</string>
+    <string name="hint_account_name">请输入用户名</string>
+    <string name="hint_account_password">请输入密码</string>
+    <string name="error_account_edit">输入内容不符合规则</string>
+    <string name="error_account_empty">输入内容不能为空</string>
+    <string name="dialog_login">登录中&#8230;</string>
+    <string name="dialog_register">注册中&#8230;</string>
+    <string name="toast_account_not_valid">您的输入内容不规范，请输入英文字母和数字组成的账户名和密码</string>
+    <string name="toast_request_failed">请求失败</string>
+
+    <!-- 点餐页面 -->
+    <string name="label_cold_food">冷菜</string>
+    <string name="label_hot_food">热菜</string>
+    <string name="label_sea_food">海鲜</string>
+    <string name="label_drinking">酒水</string>
+    <string name="btn_order">点菜</string>
+    <string name="btn_cancel_order">退点</string>
+    <string name="btn_empty">已售完</string>
+
+    <string name="menu_order">已点菜品</string>
+    <string name="menu_bill">查看订单</string>
+    <string name="menu_serve">呼叫服务</string>
+    <string name="menu_auto_refresh_on">启动实时更新</string>
+    <string name="menu_auto_refresh_off">关闭实时更新</string>
+
+    <!-- 订单页面 -->
+    <string name="text_tab_order">未下菜单</string>
+    <string name="text_tab_bill">已下菜单</string>
+    <string name="btn_submit">提交订单</string>
+    <string name="btn_bill">结账</string>
+    <string name="text_food_amount">菜品总数：</string>
+    <string name="text_order_amount">订单总价：</string>
+    <string name="text_olduser">您好，老顾客，本次你可享受7折优惠！！！！</string>
+    <string name="text_orderbill">下单</string>
+
+    <!-- 详情页面 -->
+    <string name="text_remark_hint">请在下方输入备注：</string>
+
+</resources>
